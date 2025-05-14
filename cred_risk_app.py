@@ -91,7 +91,7 @@ elif page == "Joke Break":
         "I bought a house with a 100-year mortgage. My grandkids will love it!",
         "Why did the credit card go to therapy? It couldn’t deal with the charges.",
         "My wallet is like an onion — opening it makes me cry.",
-        "I told my loan officer I’m broke. He said, 'Join the club!'"," 
+        "I told my loan officer I’m broke. He said, 'Join the club!'," 
         "I wanted a loan for a boat. They said I was already underwater.",
         "The ATM and I have a love-hate relationship — I love cash, it hates giving it."
     ]
