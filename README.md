@@ -92,3 +92,43 @@ The dataset contains about 16714 records with 10 numerical features, such as inc
 
    * **Classification Report:** Include performance metrics like precision, recall, f1-score, and support.
    * **Confusion Matrix:** Display true/false positives and negatives for each model to evaluate the performance.
+
+---
+
+### **About App **
+
+#### **Project Overview:**
+
+The **Credit Risk Benchmark App** is a machine learning-based web application designed to predict the likelihood of a borrower defaulting on a loan. The app uses a variety of borrower attributes such as income, credit utilization, payment history, and demographic information to predict the borrower’s risk.
+
+#### **Key Features:**
+
+* **Home Page:**
+
+  * Provides an introduction to the Credit Risk Benchmark problem, including an overview of the dataset and features used for predicting loan default.
+  * Details the solution workflow, including data cleaning, feature selection, class balancing, model training, and evaluation.
+
+* **Predict Risk Page:**
+
+  * Allows users to input borrower data (e.g., income, credit utilization, age, etc.).
+  * Outputs a prediction about the likelihood of the borrower defaulting, along with a visual message indicating whether the borrower is predicted to default or repay the loan.
+
+* **Joke Break Page:**
+
+  * Provides a fun break with a collection of money, loan, and credit-related jokes.
+  * Displays 1 jokes at a time with the option for the user to get new jokes by clicking a button.
+
+#### **Streamlit Deployment:**
+
+* **Navigation**: Sidebar with tabs for Home, Prediction, and Jokes.
+* **Home**: The page shown about about credit risk problem and ans shows about the solution built.
+* **Prediction Page**: A user-friendly interface for entering borrower details and receiving predictions.
+* **Jokes Page**: A lighthearted section to refresh the user with money-related jokes.
+
+
+#### **Files Included:**
+
+1. **cred\_risk\_app.py** - The main Streamlit app file containing the logic for predictions and jokes.
+2. **model.pkl** - The trained machine learning model used to make predictions.
+3. **requirements.txt** - A text file with a list of required libraries (e.g., `streamlit`, `scikit-learn`, `xgboost`, etc.) for the app to function.
+4. **credit.ip** - The file with all the data exploration, pre-processing and model training.
