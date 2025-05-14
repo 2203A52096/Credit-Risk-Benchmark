@@ -13,7 +13,7 @@ st.set_page_config(page_title="Credit Risk Prediction App", layout="centered")
 page = st.radio("Navigate", ["Home", "Predict Risk", "Joke Break"])
 
 if page == "Home":
-    st.title("Credit Risk Benchmark App")
+    st.title("💳 Credit Risk Benchmark App")
 
     st.markdown("""
     ## Credit Risk Benchmark Problem
@@ -53,7 +53,7 @@ if page == "Home":
     """)
 
 elif page == "Predict Risk":
-    st.title("Credit Risk Prediction")
+    st.title("📊 Credit Risk Prediction")
 
     st.markdown("Fill out the borrower details below to predict default risk.")
 
@@ -78,12 +78,12 @@ elif page == "Predict Risk":
         prediction = model.predict(features)[0]
 
         if prediction == 1:
-            st.error(" Prediction: The borrower is likely to **default**.")
+            st.error("❌ Prediction: The borrower is likely to **default**.")
         else:
-            st.success(" Prediction: The borrower is likely to **repay** the loan.")
+            st.success("✅ Prediction: The borrower is likely to **repay** the loan.")
 
 elif page == "Joke Break":
-    st.title("Money & Loan Jokes")
+    st.title("🤣 Money & Loan Jokes")
     jokes = [
         "Why did the banker switch careers? He lost interest.",
         "I applied for a loan to start a bakery. Now I'm rolling in dough!",
