@@ -99,13 +99,9 @@ elif page == "Joke Break":
     ]
 
     if 'joke_idx' not in st.session_state:
-        st.session_state.joke_idx = random.sample(range(len(jokes)), 3)  # Pick 3 unique jokes
+        st.session_state.joke_idx = random.randint(0, len(jokes) - 1)
 
-    selected_jokes = [jokes[i] for i in st.session_state.joke_idx]
+    st.markdown(f"**💬 {jokes[st.session_state.joke_idx]}**")
 
-    for joke in selected_jokes:
-        st.markdown(f"<p style='font-size:24px;'>{joke}</p>", unsafe_allow_html=True)
-
-    if st.button("Tell me another set of jokes!"):
-        st.session_state.joke_idx = random.sample(range(len(jokes)), 3)  # Pick new 3 jokes
-        st.experimental_rerun()
+    if st.button("Tell me another joke!"):
+        st.session_state.joke_idx = random.randint(0, len(jokes) - 1)
