@@ -9,8 +9,9 @@ model = pickle.load(open('model.pkl', 'rb'))
 # Set Streamlit page config
 st.set_page_config(page_title="Credit Risk Prediction App", layout="centered")
 
-# Navigation with dropdown selectbox
-page = st.selectbox("Navigate to:", ["Home", "Predict Risk", "Joke Break"])
+# Sidebar navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to:", ["Home", "Predict Risk", "Joke Break"])
 
 if page == "Home":
     st.title("💳 Credit Risk Benchmark App")
@@ -104,4 +105,3 @@ elif page == "Joke Break":
 
     if st.button("Tell me another joke!"):
         st.session_state.joke_idx = random.randint(0, len(jokes) - 1)
-        st.experimental_rerun()
