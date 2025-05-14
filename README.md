@@ -95,7 +95,7 @@ The dataset contains about 16714 records with 10 numerical features, such as inc
 
 ---
 
-### **About App**
+## **About App**
 
 #### **Project Overview:**
 
