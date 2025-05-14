@@ -21,7 +21,7 @@ To make this prediction, we will use different features like:
 * And other financial details
 
 **Data:**
-The dataset is taken from kaggle from https://www.kaggle.com/datasets/adilshamim8/credit-risk-benchmark-dataset
+The dataset is taken from kaggle from https://www.kaggle.com/datasets/adilshamim8/credit-risk-benchmark-dataset .
 The dataset contains about 16714 records with 10 numerical features, such as income, age, credit usage, and payment history. The target variable is called **dlq_2yrs**, which shows whether a borrower defaulted or not in the next 2 years.
 
 **Challenges:**
@@ -46,13 +46,11 @@ The dataset contains about 16714 records with 10 numerical features, such as inc
 
 3. **Data Visualization**
 
-   * **Histograms:** Visualize the distribution of numerical features to understand their spread.
    * **Box Plots:** Detect outliers in numerical data.
-   * **Scatter Plots / Correlation Matrix:** Explore relationships between variables and their correlation.
 
-4. **Feature and Target Selection**
+5. **Feature and Target Selection**
 
-   * Select the target variable: **SeriousDlqin2yrs**.
+   * Select the target variable: **dlq_2yrs**.
    * The features to be used for prediction:
 
      * RevolvingUtilizationOfUnsecuredLines
@@ -66,20 +64,21 @@ The dataset contains about 16714 records with 10 numerical features, such as inc
      * NumberOfDependents
      * NumberRealEstateLoansOrLines
 
-5. **Feature Importance**
+6. **Feature Importance**
 
-   * Use models like **XGBoost** or **Random Forest** to compute and display the importance of each feature.
+   * Use **Random Forest** to compute and display the importance of each feature.
    * Identify and rank the top features contributing to predictions.
 
-6. **Outlier Removal**
+7. **Outlier Removal**
 
-   * Detect and remove outliers from numerical features (e.g., MonthlyIncome, Age) using **IQR (Interquartile Range)** or **Z-score** to enhance data quality.
+   * Detect and remove outliers from numerical features (e.g., MonthlyIncome, Age) using **IQR (Interquartile Range)** to enhance data quality.
 
-7. **SMOTE Application**
+8. **SMOTE Application**
 
-   * Handle the class imbalance in the target variable using **SMOTE (Synthetic Minority Over-sampling Technique)** to generate synthetic samples of the minority class, ensuring a balanced dataset.
+   * After removing outliers. The data becomes a bit imbalence
+   *To  Handle the class imbalance in the target variable **SMOTE (Synthetic Minority Over-sampling Technique)** is used.
 
-8. **Model Training**
+9. **Model Training**
 
    * Train four models:
 
@@ -89,7 +88,7 @@ The dataset contains about 16714 records with 10 numerical features, such as inc
      * **LightGBM Classifier**
    * Train each model on the **SMOTE-balanced data** and evaluate them on the test set.
 
-9. **Model Evaluation**
+10. **Model Evaluation**
 
    * **Classification Report:** Include performance metrics like precision, recall, f1-score, and support.
    * **Confusion Matrix:** Display true/false positives and negatives for each model to evaluate the performance.
